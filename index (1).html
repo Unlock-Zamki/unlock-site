@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNLOCK - Вскрытие замков в Алматы</title>
+    <style>
+        /* Сброс стилей и базовые настройки */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: #f9f9f9; color: #333; line-height: 1.6; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        h1, h2, h3 { color: #111; }
+        
+        /* Кнопки */
+        .btn {
+            display: inline-block; background-color: #ff6600; color: #fff;
+            padding: 15px 30px; font-size: 18px; font-weight: bold;
+            text-decoration: none; border-radius: 5px; transition: 0.3s;
+            box-shadow: 0 4px 6px rgba(255, 102, 0, 0.3);
+        }
+        .btn:hover { background-color: #e55c00; transform: translateY(-2px); }
+
+        /* Шапка сайта */
+        header { background-color: #111; color: #fff; padding: 15px 0; position: sticky; top: 0; z-index: 100; }
+        .header-inner { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 28px; font-weight: 900; color: #ff6600; letter-spacing: 2px; }
+        .header-phone a { color: #fff; text-decoration: none; font-size: 20px; font-weight: bold; }
+        .header-phone span { color: #ff6600; }
+
+        /* Главный экран */
+        .hero { background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1558025137-0b4d6c28f127?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') center/cover; color: #fff; padding: 100px 0; text-align: center; }
+        .hero h1 { font-size: 42px; color: #fff; margin-bottom: 20px; text-transform: uppercase; }
+        .hero p { font-size: 20px; margin-bottom: 30px; }
+
+        /* Блок с документами */
+        .alert-box { background-color: #fff3e0; border-left: 6px solid #ff6600; padding: 20px; margin: 40px 0; border-radius: 4px; }
+        .alert-box h3 { color: #e55c00; margin-bottom: 10px; }
+
+        /* Услуги */
+        .services { padding: 60px 0; }
+        .section-title { text-align: center; font-size: 32px; margin-bottom: 40px; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .service-card { background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-top: 4px solid #ff6600; }
+        .service-card h3 { margin-bottom: 10px; font-size: 20px; }
+        .service-price { font-size: 22px; font-weight: bold; color: #111; margin-top: 15px; }
+
+        /* Преимущества */
+        .features { background-color: #111; color: #fff; padding: 60px 0; }
+        .features .section-title { color: #fff; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .feature-item h3 { color: #ff6600; margin-bottom: 10px; font-size: 20px; }
+
+        /* Контакты и подвал */
+        footer { background-color: #222; color: #ccc; padding: 50px 0 20px; text-align: center; }
+        footer h2 { color: #fff; margin-bottom: 20px; }
+        .footer-contacts { font-size: 20px; margin-bottom: 20px; }
+        .footer-contacts a { color: #ff6600; text-decoration: none; font-weight: bold; font-size: 24px; }
+        
+        /* Мобильная адаптация */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 28px; }
+            .header-inner { flex-direction: column; gap: 10px; }
+            .hero { padding: 60px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header>
+        <div class="container header-inner">
+            <div class="logo">UNLOCK</div>
+            <div class="header-phone">
+                <a href="tel:+77015508972">Звоните 24/7: <span>+7 (701) 550-89-72</span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+        <div class="container">
+            <h1>Вскрытие квартирных дверей в Алматы</h1>
+            <p>Приедем за 20–30 минут. Работаем 24/7. Аккуратно, без повреждений. От 6 000 тг.</p>
+            <a href="tel:+77015508972" class="btn">ВЫЗВАТЬ МАСТЕРА</a>
+        </div>
+    </section>
+
+    <!-- Важная информация -->
+    <div class="container">
+        <div class="alert-box">
+            <h3>🛡 Ваша безопасность — наш приоритет!</h3>
+            <p>Мы вскрываем двери <strong>строго при наличии документов на недвижимость</strong> (или иных подтверждений, что вы являетесь владельцем/жильцом). Пожалуйста, подготовьте документы до приезда мастера. Это защищает вас и гарантирует законность наших действий.</p>
+        </div>
+    </div>
+
+    <!-- Услуги -->
+    <section class="services container">
+        <h2 class="section-title">Наши услуги и цены</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Захлопнулась дверь</h3>
+                <p>Ключи остались внутри, а дверь закрылась.</p>
+                <div class="service-price">от 6 000 тг.</div>
+            </div>
+            <div class="service-card">
+                <h3>Потеря ключей</h3>
+                <p>Дверь закрыта на замок, доступа внутрь нет.</p>
+                <div class="service-price">от 8 000 тг.</div>
+            </div>
+            <div class="service-card">
+                <h3>Заклинил замок</h3>
+                <p>Срочное аварийное вскрытие при поломке механизма.</p>
+                <div class="service-price">от 8 000 тг.</div>
+            </div>
+            <div class="service-card">
+                <h3>Сломался ключ</h3>
+                <p>Извлечение обломков ключа из скважины.</p>
+                <div class="service-price">от 6 000 тг.</div>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 20px; font-style: italic;">* Точная стоимость зависит от типа замка. Мы называем финальную цену по телефону до выезда — никаких доплат на месте!</p>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают UNLOCK</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>⚡ Скорость</h3>
+                    <p>Мастер выезжает сразу после звонка. В среднем, мы на месте через 20–30 минут по Алматы.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🔧 Аккуратность</h3>
+                    <p>В 95% случаев открываем дверь без повреждений. Замок и дверное полотно остаются целыми.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🤝 Честность</h3>
+                    <p>Стоимость называем сразу по телефону. Никаких «сюрпризов» на месте.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>👨‍🔧 Надежность</h3>
+                    <p>Личный контроль качества. Если я занят, к вам оперативно приедет мой проверенный напарник.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <h2>Свяжитесь с нами прямо сейчас</h2>
+            <p class="footer-contacts">Круглосуточно, без выходных: <br>
+            <a href="tel:+77015508972">+7 (701) 550-89-72</a></p>
+            <p>г. Алматы (Выезд во все районы города)</p>
+            <p style="margin-top: 20px;">
+                <a href="https://wa.me/77015508972" target="_blank" style="display:inline-block; background:#25D366; color:#fff; padding:10px 20px; text-decoration:none; border-radius:5px; font-weight:bold; margin-top:10px;">Написать в WhatsApp</a>
+            </p>
+            <p style="margin-top: 40px; font-size: 14px; color: #666;">&copy; 2024 UNLOCK. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
